@@ -1,18 +1,22 @@
-<!--<div>-->
-<!--  <p>25</p>-->
-<!--  <p>25</p>-->
-<!--  <p>25</p>-->
-<!--  <p>25</p>-->
+
+<app-search></app-search>
+<!--<div class="cards-wrapper">-->
+<!--  <app-card *ngFor="let card of cards$ | async"></app-card>-->
 <!--</div>-->
-<mat-slide-toggle>Toggle me!</mat-slide-toggle>
-<!--<mat-card-content>22222</mat-card-content>-->
-<mat-card>
-  <mat-card-content>Simple card</mat-card-content>
-</mat-card>
-<app-card></app-card>
 
 
-<div class="example-button-row">
-  <button mat-raised-button color="primary">Primary</button>
+
+
+<div class="cards-wrapper"
+     *ngIf="cards; else loader"
+>
+  <app-card
+    *ngFor="let card of cards"
+  ></app-card>
 </div>
+
+<ng-template #loader>
+  <p>Loading ...</p>
+</ng-template>
+
 
