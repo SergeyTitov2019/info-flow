@@ -12,6 +12,10 @@
 >
   <app-card
     *ngFor="let card of cards"
+    [title]="card.title"
+    [imagePath]="card.img"
+    [content]="card.content"
+    [date]="card.date"
   ></app-card>
 </div>
 
