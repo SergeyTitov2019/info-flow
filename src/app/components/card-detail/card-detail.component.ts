@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { Observable, switchMap} from "rxjs";
+import { ActivatedRoute, Params} from "@angular/router";
+import { CardsService } from "../../shared/services/cards.service";
+import { Card } from "../../types/card";
 
 @Component({
   selector: 'app-card-detail',
@@ -22,5 +26,21 @@ export class CardDetailComponent {
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum ornare convallis non etiam tincidunt tincidunt. Non dolor vel purus id. Blandit habitasse volutpat id dolor pretium, sem iaculis. Faucibus commodo mauris enim, turpis blandit.\n' +
     'Porttitor facilisi viverra mi lacus lacinia accumsan. Pellentesque gravida ligula bibendum aliquet nulla massa elit. Ac faucibus donec sit morbi pharetra urna. Vel facilisis amet placerat ultrices lobortis proin nulla. '
   icon: string = 'arrow_back_ios'
+
+
+
+  cardInfo$: Observable<any> = new Observable<any>()
+
+  constructor(private route: ActivatedRoute,
+              private cardsService: CardsService) {
+  }
+
+
+  ngOnInit() {
+    this.cardInfo$ = this.route.params
+      .pipe(switchMap((params: Params) => {
+        return params['id']
+      }))
+  }
 
 }

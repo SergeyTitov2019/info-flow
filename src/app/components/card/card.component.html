@@ -5,7 +5,7 @@
       <p>{{ data.date }}</p>
       <h3>{{ data.title }}</h3>
       <p class="content">{{ data.content | shorten: 100 }}</p>
-      <button mat-button [routerLink]="['/1']">Read more
+      <button mat-button [routerLink]="['', data.id]">Read more
         <mat-icon matIconPrefix>{{ icon }}</mat-icon>
       </button>
     </mat-card-content>
