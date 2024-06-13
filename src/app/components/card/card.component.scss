@@ -7,6 +7,16 @@
     height: 350px;
     border-radius: 10px 10px 0 0;
   }
+  .date{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    mat-icon{
+      font-size: 1.4rem;
+    }
+  }
   .content{
     font-size: 1.2rem;
   }

@@ -2,7 +2,9 @@
   <mat-card >
     <mat-card-content>
       <img [src]="data.img" [alt]="data.imgName">
-      <p>{{ data.date }}</p>
+      <p class="date">
+        <mat-icon >{{ iconDate }}</mat-icon>
+        {{ data.date | date }}</p>
       <h5>{{ data.title }}</h5>
       <p class="content">{{ data.content | shorten: 150 }}</p>
       <button mat-button [routerLink]="['', data.id]">Read more

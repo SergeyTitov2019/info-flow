@@ -18,7 +18,7 @@ export const cards:Card[] = [
       'Bull sharks thrive in fresh, brackish and saltwater and can grow to be 11.5 feet (3.5 meters) long. They live in coastal, tropical and subtropical environments, "so they are used to warm waters," Mullins said.\n' +
       '\n' +
       'In the new study, scientists reviewed data from the Alabama Department of Conservation and Natural Resources\' gillnet survey of the coastline along Mobile Bay. They found 440 bull sharks captured over the study period.',
-    date: 2555,
+    date: new Date(),
     img: 'https://t3.ftcdn.net/jpg/01/03/87/88/360_F_103878807_z84l8RHnL5VRhCVVp6zbA2lvVt2v80Zy.jpg',
     imgName: 'pic of World',
     id: '0001'
@@ -37,7 +37,7 @@ export const cards:Card[] = [
       'In telling these stories, "we were really looking for the wow," Roy said. "We are potentially the first generation to be able to fully grasp the connectivity of what\'s going on here and potentially the last generation to be able to put that knowledge to good use."\n' +
       '\n' +
       'The hammerhead shark assembly footage fulfills every expectation Roy had for the show, he said. "Talking about those \'wow\' revelations — for me that was one of them," he said. "Sharks need volcanoes? Who knew!',
-    date: 2554,
+    date: new Date(),
     img: 'https://cdn.mos.cms.futurecdn.net/RN6Tahs5JhEWiNSHy64eyj-970-80.png.webp',
     imgName: 'pic of World',
     id: '0002'
@@ -53,7 +53,7 @@ export const cards:Card[] = [
       'Scientists believe these gatherings, which took place in May 2022 between 495 and 1,146 feet (151 to 350 m) deep, were "deliberate." . Before this discovery, there had been no evidence that these sharks aggregated. The researchers aren\'t sure why the sharks were coming together, but it could be to do with feeding. "We saw juvenile hammerheads down there and those are easy targets for the prickly," Guzmán said. It could also be linked to reproduction. The team checked the sharks\' claspers — modified pelvic fins used in reproduction — to confirm that both male and female sharks were at the gatherings.\n' +
       '\n' +
       'Related: Watch a super-rare dreamer anglerfish with ultra-black \'invisibility cloak\' swim like a shadow in the deep sea',
-    date: 2551,
+    date: new Date(),
     img: 'https://t3.ftcdn.net/jpg/05/66/14/16/360_F_566141635_0kJ26Xqbl2fTI1dFQBHJpRBWOM6C5Ryp.jpg',
     imgName: 'pic of World',
     id: '0003'
@@ -65,7 +65,7 @@ export const cards:Card[] = [
       'Scientists believe these gatherings, which took place in May 2022 between 495 and 1,146 feet (151 to 350 m) deep, were "deliberate." . Before this discovery, there had been no evidence that these sharks aggregated. The researchers aren\'t sure why the sharks were coming together, but it could be to do with feeding. "We saw juvenile hammerheads down there and those are easy targets for the prickly," Guzmán said. It could also be linked to reproduction. The team checked the sharks\' claspers — modified pelvic fins used in reproduction — to confirm that both male and female sharks were at the gatheringsThe elusive prickly sharks, which have bodies covered by thorny, modified teeth, grow up to to 13 feet (4 m) long and may inhabit depths of up to 3,280 feet (1,000 m). "They prefer to be in deeper waters," which makes them difficult to observe, study author Héctor Guzmán, a marine ecologist at Smithsonian Tropical Research Institute, told Live Science. Although information on the distribution of this species is scarce, they have been observed from Oregon and Japan in their northerly range down to Chile and New Zealand.\n' +
       '\n' +
       'Scientists believe these gatherings, which took place in May 2022 between 495 and 1,146 feet (151 to 350 m) deep, were "deliberate." . Before this discovery, there had been no evidence that these sharks aggregated. The researchers aren\'t sure why the sharks were coming together, but it could be to do with feeding. "We saw juvenile hammerheads down there and those are easy targets for the prickly," Guzmán said. It could also be linked to reproduction. The team checked the sharks\' claspers — modified pelvic fins used in reproduction — to confirm that both male and female sharks were at the gatherings',
-    date: 2559,
+    date: new Date(),
     img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYYeygItvDNs2v_RSx_qJudQalzjFU1A_Wsy3nR1Uh-7mHTZaKTeTpVHM_Na9jhbVnZLE&usqp=CAU',
     imgName: 'pic of World',
     id: '0004'
@@ -86,7 +86,7 @@ export const cards:Card[] = [
       'In October 2023, odd swimming behaviors were first reported in small boned fish species in the region. Locals described fish "showing abnormal swimming behaviors in which they erratically swim in circles or swim upside down," Brame said. "We didn\'t get a report of a sawfish that was seemingly affected until late January 2024."\n' +
       '\n' +
       'Researchers have examined the dead sawfish but found no signs of contagious disease or bacterial infection that could be responsible, according to a statement from the Florida Fish and Wildlife Conservation Commission (FWC), which is leading the investigation.',
-    date: 2555,
+    date: new Date(),
     img: 'https://cdn.mos.cms.futurecdn.net/sf469CRVg3zsMKEB9z8u45-650-80.jpg.webp',
     imgName: 'pic of World',
     id: '0005'

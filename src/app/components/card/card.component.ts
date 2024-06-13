@@ -10,6 +10,7 @@ import {Card} from "../../types/card";
 export class CardComponent {
   @Input() data!: Card
   icon: string = 'arrow_forward_ios'
+  iconDate: string = 'date_range'
 
 }
 
