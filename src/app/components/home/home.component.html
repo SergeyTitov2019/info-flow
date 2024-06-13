@@ -7,11 +7,25 @@
   </mat-form-field>
 </div>
 
+<!--<div class="cards-wrapper"-->
+<!--     *ngIf="cards; else loader"-->
+<!--&gt;-->
+<!--  <app-card-->
+<!--    *ngFor="let card of cards | searchData: searchStr;"-->
+<!--    [data]="card"-->
+<!--  ></app-card>-->
+
+<!--  <pre>-->
+<!--    {{ cards$ | json}}-->
+<!--  </pre>-->
+<!--</div>-->
+
+
 <div class="cards-wrapper"
-     *ngIf="cards; else loader"
+     *ngIf="cards$ | async; else loader"
 >
   <app-card
-    *ngFor="let card of cards | searchData: searchStr;"
+    *ngFor="let card of (cards$ | async) | searchData: searchStr;"
     [data]="card"
   ></app-card>
 </div>

@@ -17,6 +17,7 @@ import {FormsModule} from "@angular/forms";
 import { ShortenPipe } from './shared/pipes/shorten.pipe';
 import { CardDetailComponent } from './components/card-detail/card-detail.component';
 import { HomeComponent } from './components/home/home.component';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { HomeComponent } from './components/home/home.component';
     MatInputModule,
     MatFormFieldModule,
     MatIconModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     provideAnimationsAsync('noop')

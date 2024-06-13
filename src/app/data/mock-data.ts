@@ -21,7 +21,8 @@ export const cards:Card[] = [
     date: new Date(),
     img: 'https://t3.ftcdn.net/jpg/01/03/87/88/360_F_103878807_z84l8RHnL5VRhCVVp6zbA2lvVt2v80Zy.jpg',
     imgName: 'pic of World',
-    id: '0001'
+    id: '0001',
+    summary: '',
   },
   {
     title: 'The Top 100 Software Companies Of 2020',
@@ -40,7 +41,8 @@ export const cards:Card[] = [
     date: new Date(),
     img: 'https://cdn.mos.cms.futurecdn.net/RN6Tahs5JhEWiNSHy64eyj-970-80.png.webp',
     imgName: 'pic of World',
-    id: '0002'
+    id: '0002',
+    summary: '',
   },
   {
     title: 'Elusive prickly sharks spotted gathering at underwater mountain off Panama',
@@ -56,7 +58,9 @@ export const cards:Card[] = [
     date: new Date(),
     img: 'https://t3.ftcdn.net/jpg/05/66/14/16/360_F_566141635_0kJ26Xqbl2fTI1dFQBHJpRBWOM6C5Ryp.jpg',
     imgName: 'pic of World',
-    id: '0003'
+    id: '0003',
+    summary: '',
+
   },
   {
     title: 'Salmon farms are increasingly being hit by mass die-offs',
@@ -68,7 +72,9 @@ export const cards:Card[] = [
     date: new Date(),
     img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYYeygItvDNs2v_RSx_qJudQalzjFU1A_Wsy3nR1Uh-7mHTZaKTeTpVHM_Na9jhbVnZLE&usqp=CAU',
     imgName: 'pic of World',
-    id: '0004'
+    id: '0004',
+    summary: '',
+
   },
   {
     title: 'Smalltooth sawfish in Florida are spinning and beaching themselves',
@@ -89,7 +95,9 @@ export const cards:Card[] = [
     date: new Date(),
     img: 'https://cdn.mos.cms.futurecdn.net/sf469CRVg3zsMKEB9z8u45-650-80.jpg.webp',
     imgName: 'pic of World',
-    id: '0005'
+    id: '0005',
+    summary: '',
+
   },
 
 ]

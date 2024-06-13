@@ -2,11 +2,11 @@
   <mat-card>
     <mat-card-content>
       <div class="img-container">
-        <img [src]="card.img" [alt]="card.imgName">
+        <img [src]="card.image_url" [alt]="card.imgName">
       </div>
       <div class="content-container">
         <h4>{{ card.title }}</h4>
-        <p class="content">{{ card.content }}</p>
+        <p class="content">{{ card.summary }}</p>
       </div>
       <button mat-button [routerLink]="['']">Back to homepage
         <mat-icon matIconPrefix>{{ icon }}</mat-icon>

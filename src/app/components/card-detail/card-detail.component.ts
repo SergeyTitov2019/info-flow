@@ -12,7 +12,7 @@ import {Card} from "../../types/card";
 export class CardDetailComponent {
 
   icon: string = 'arrow_back_ios'
-  cardInfo$: Observable<Card> = new Observable<Card>()
+  cardInfo$: Observable<any> = new Observable<any>()
 
   constructor(private route: ActivatedRoute,
               private cardsService: CardsService) {
@@ -21,7 +21,7 @@ export class CardDetailComponent {
   ngOnInit() {
     this.cardInfo$ = this.route.params
       .pipe(switchMap((params: Params) => {
-        return this.cardsService.getById(params['id'])
+        return this.cardsService.getArticleById(params['id'])
       }))
   }
 }
