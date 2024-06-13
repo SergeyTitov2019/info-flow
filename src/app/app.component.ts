@@ -13,6 +13,8 @@ export class AppComponent {
 
   // cards$: Observable<Card[]> = new Observable<Card[]>()
   cards = cards
+  searchStr: string = ''
+
 
   constructor(private cardService: CardsService) {
   }

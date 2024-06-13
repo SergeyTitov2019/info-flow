@@ -3,8 +3,8 @@
     <mat-card-content>
       <img [src]="data.img" [alt]="data.imgName">
       <p>{{ data.date }}</p>
-      <h2>{{ data.title }}</h2>
-      <p>{{ data.content }}</p>
+      <h3>{{ data.title }}</h3>
+      <p class="content">{{ data.content | shorten: 100 }}</p>
       <button mat-button>Read more
         <mat-icon matIconPrefix>{{ icon }}</mat-icon>
       </button>

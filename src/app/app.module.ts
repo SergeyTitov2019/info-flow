@@ -6,22 +6,23 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatIconModule} from '@angular/material/icon';
-
-
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatSlideToggleModule } from "@angular/material/slide-toggle";
 import { CardComponent } from './components/card/card.component';
 import { SearchComponent } from './components/search/search.component';
+import { SearchPipe } from "./shared/pipes/search.pipe";
+import {FormsModule} from "@angular/forms";
+import { ShortenPipe } from './shared/pipes/shorten.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    SearchComponent
+    SearchComponent,
+    SearchPipe,
+    ShortenPipe
   ],
   imports: [
     BrowserModule,
@@ -31,7 +32,8 @@ import { SearchComponent } from './components/search/search.component';
     MatCardModule,
     MatInputModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule
   ],
   providers: [
     provideAnimationsAsync('noop')
