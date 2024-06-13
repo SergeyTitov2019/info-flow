@@ -1,21 +1,12 @@
 
 <app-search></app-search>
-<!--<div class="cards-wrapper">-->
-<!--  <app-card *ngFor="let card of cards$ | async"></app-card>-->
-<!--</div>-->
-
-
-
 
 <div class="cards-wrapper"
      *ngIf="cards; else loader"
 >
   <app-card
     *ngFor="let card of cards"
-    [title]="card.title"
-    [imagePath]="card.img"
-    [content]="card.content"
-    [date]="card.date"
+    [data]="card"
   ></app-card>
 </div>
 

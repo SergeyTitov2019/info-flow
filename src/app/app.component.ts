@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {cards} from "./data/mock-data";
 import {Observable} from "rxjs";
 import {Card} from "./types/card";
@@ -12,8 +12,10 @@ import {CardsService} from "./shared/services/cards.service";
 export class AppComponent {
 
   // cards$: Observable<Card[]> = new Observable<Card[]>()
-cards = cards
-  constructor(private cardService: CardsService) {}
+  cards = cards
+
+  constructor(private cardService: CardsService) {
+  }
 
   ngOnInit() {
     // this.cards$ = this.cardService.getAll()

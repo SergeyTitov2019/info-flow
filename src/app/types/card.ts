@@ -3,4 +3,5 @@ export interface Card {
   content: string
   date: number
   img: string
+  imgName: string
 }

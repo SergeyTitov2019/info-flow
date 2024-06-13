@@ -1,12 +1,12 @@
 <div class="card">
   <mat-card >
     <mat-card-content>
-      <img [src]="imagePath" alt="pic">
-      <p>{{date}}</p>
-      <h2>{{ title }}</h2>
-      <p>{{ content }}</p>
+      <img [src]="data.img" [alt]="data.imgName">
+      <p>{{ data.date }}</p>
+      <h2>{{ data.title }}</h2>
+      <p>{{ data.content }}</p>
       <button mat-button>Read more
-        <mat-icon matIconPrefix>arrow_forward_ios</mat-icon>
+        <mat-icon matIconPrefix>{{ icon }}</mat-icon>
       </button>
     </mat-card-content>
   </mat-card>
