@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {Card} from "../../types/card";
+import {Card, Article} from "../../types/card";
 
 @Component({
   selector: 'app-card',
@@ -8,7 +8,7 @@ import {Card} from "../../types/card";
 
 })
 export class CardComponent {
-  @Input() data!: Card
+  @Input() data!: Article
   icon: string = 'arrow_forward_ios'
   iconDate: string = 'date_range'
 

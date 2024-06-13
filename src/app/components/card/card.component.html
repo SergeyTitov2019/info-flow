@@ -1,12 +1,12 @@
 <div class="card">
   <mat-card >
     <mat-card-content>
-      <img [src]="data.image_url" [alt]="data.imgName">
+      <img [src]="data.image_url" [alt]="data.news_site">
       <p class="date">
         <mat-icon >{{ iconDate }}</mat-icon>
         {{ data.published_at | date }}</p>
       <h5>{{ data.title }}</h5>
-      <p class="content">{{ data.summary | shorten: 150 }}</p>
+      <p class="content">{{ data.summary | shorten: 100 }}</p>
       <button mat-button [routerLink]="['', data.id]">Read more
         <mat-icon matIconPrefix>{{ icon }}</mat-icon>
       </button>
