@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Observable, switchMap } from "rxjs";
 import { ActivatedRoute, Params } from "@angular/router";
 import { CardsService } from "../../shared/services/cards.service";
+import {Card} from "../../types/card";
 
 @Component({
   selector: 'app-card-detail',
@@ -11,12 +12,11 @@ import { CardsService } from "../../shared/services/cards.service";
 export class CardDetailComponent {
 
   icon: string = 'arrow_back_ios'
-  cardInfo$: Observable<any> = new Observable<any>()
+  cardInfo$: Observable<Card> = new Observable<Card>()
 
   constructor(private route: ActivatedRoute,
               private cardsService: CardsService) {
   }
-
 
   ngOnInit() {
     this.cardInfo$ = this.route.params
