@@ -3,8 +3,8 @@
     <mat-card-content>
       <img [src]="data.img" [alt]="data.imgName">
       <p>{{ data.date }}</p>
-      <h3>{{ data.title }}</h3>
-      <p class="content">{{ data.content | shorten: 100 }}</p>
+      <h5>{{ data.title }}</h5>
+      <p class="content">{{ data.content | shorten: 150 }}</p>
       <button mat-button [routerLink]="['', data.id]">Read more
         <mat-icon matIconPrefix>{{ icon }}</mat-icon>
       </button>
