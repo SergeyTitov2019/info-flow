@@ -12,8 +12,8 @@ import {CardsService} from "./shared/services/cards.service";
 export class AppComponent {
 
   // cards$: Observable<Card[]> = new Observable<Card[]>()
-  cards = cards
-  searchStr: string = ''
+  // cards = cards
+  // searchStr: string = ''
 
 
   constructor(private cardService: CardsService) {

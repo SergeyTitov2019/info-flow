@@ -1,0 +1,21 @@
+<div class="card-info">
+  <mat-card >
+    <mat-card-content>
+      <div class="img-container">
+        <img [src]="img" [alt]="imgName">
+      </div>
+
+      <div class="content-container">
+        <h4>{{ title }}</h4>
+        <p class="content">{{ content }}</p>
+      </div>
+
+      <button mat-button [routerLink]="['']">Back to homepage
+        <mat-icon matIconPrefix>{{ icon }}</mat-icon>
+
+      </button>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+

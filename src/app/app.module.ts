@@ -15,6 +15,8 @@ import { SearchComponent } from './components/search/search.component';
 import { SearchPipe } from "./shared/pipes/search.pipe";
 import {FormsModule} from "@angular/forms";
 import { ShortenPipe } from './shared/pipes/shorten.pipe';
+import { CardDetailComponent } from './components/card-detail/card-detail.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ShortenPipe } from './shared/pipes/shorten.pipe';
     CardComponent,
     SearchComponent,
     SearchPipe,
-    ShortenPipe
+    ShortenPipe,
+    CardDetailComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

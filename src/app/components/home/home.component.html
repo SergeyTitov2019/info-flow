@@ -1,0 +1,23 @@
+<div class="search-wrapper">
+  <p>Filter by keywords</p>
+  <mat-form-field appearance="outline">
+    <mat-label>Filter by keywords</mat-label>
+    <mat-icon matSuffix>zoom_out</mat-icon>
+    <input matInput placeholder="The most successful IT companies in 2020" [(ngModel)]="searchStr">
+  </mat-form-field>
+</div>
+
+<div class="cards-wrapper"
+     *ngIf="cards; else loader"
+>
+  <app-card
+    *ngFor="let card of cards | searchData: searchStr;"
+    [data]="card"
+  ></app-card>
+</div>
+
+<ng-template #loader>
+  <p>Loading ...</p>
+</ng-template>
+
+
