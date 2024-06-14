@@ -9,8 +9,7 @@ import {Card, Article} from "../../types/card";
 })
 export class CardComponent {
   @Input() data!: Article
-  icon: string = 'arrow_forward_ios'
-  iconDate: string = 'date_range'
-
+  icon = 'arrow_forward_ios'
+  iconDate = 'date_range'
 }
 

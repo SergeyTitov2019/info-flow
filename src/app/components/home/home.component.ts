@@ -11,15 +11,15 @@ import {Article} from "../../types/card";
 })
 export class HomeComponent {
 
-  cards = cards
+  // cards = cards
   searchStr: string = ''
 
-  posts$: Observable<any> = new Observable<any>()
+  // posts$: Observable<any> = new Observable<any>()
   cards$: Observable<any> = this.cardsService.getArticles();
 
   constructor(private cardsService: CardsService) {}
 
-  ngOnInit() {
-    this.posts$ = this.cardsService.getArticles()
-  }
+  // ngOnInit() {
+  //   this.posts$ = this.cardsService.getArticles()
+  // }
 }

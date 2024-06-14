@@ -7,9 +7,7 @@
   </mat-form-field>
 </div>
 
-<div class="cards-wrapper"
-     *ngIf="cards$ | async; else loader"
->
+<div class="cards-wrapper" *ngIf="cards$ | async; else loader">
   <app-card
     *ngFor="let card of (cards$ | async) | searchData: searchStr;"
     [data]="card"
