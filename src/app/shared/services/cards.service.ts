@@ -1,6 +1,7 @@
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { HttpClient} from "@angular/common/http";
-import { map } from "rxjs";
+import { map, Observable} from "rxjs";
+import { Article, ApiResponse } from "../../types/card";
 
 @Injectable({
   providedIn: 'root'
@@ -8,16 +9,15 @@ import { map } from "rxjs";
 export class CardsService {
 
   private baseUrl = 'https://api.spaceflightnewsapi.net/v4';
+  private http = inject(HttpClient)
 
-  constructor(private http: HttpClient) {
+  getArticles(): Observable<Article[]>{
+    return this.http.get<ApiResponse>(`${this.baseUrl}/articles/`)
+      .pipe(map((data:ApiResponse) => data.results));
   }
 
-  getArticles(){
-    return this.http.get(`${this.baseUrl}/articles/`).pipe(map((d: any) => d.results));
-  }
-
-  getArticleById(id: string){
-    return this.http.get(`${this.baseUrl}/articles/${id}`);
+  getArticleById(id: string): Observable<Article>{
+    return this.http.get<Article>(`${this.baseUrl}/articles/${id}`);
   }
 }
 

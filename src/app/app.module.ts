@@ -11,7 +11,6 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatSlideToggleModule } from "@angular/material/slide-toggle";
 import { CardComponent } from './components/card/card.component';
-import { SearchComponent } from './components/search/search.component';
 import { SearchPipe } from "./shared/pipes/search.pipe";
 import {FormsModule} from "@angular/forms";
 import { ShortenPipe } from './shared/pipes/shorten.pipe';
@@ -23,7 +22,6 @@ import { HttpClientModule } from "@angular/common/http";
   declarations: [
     AppComponent,
     CardComponent,
-    SearchComponent,
     SearchPipe,
     ShortenPipe,
     CardDetailComponent,
